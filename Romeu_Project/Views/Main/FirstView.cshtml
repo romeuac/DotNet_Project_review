@@ -1,0 +1,16 @@
+﻿@*Com isso obtem-se a intellissense para os comadnos de mondel MyData*@
+@*@model Romeu_Project.Models.MyData*@
+
+ @*PAra quando existe a lista de elementos*@
+@*@model IEnumerable<Romeu_Project.Models.MyData>*@
+@model Romeu_Project.ViewModels.FirstViewViewModel
+
+@*Para a lista de elementos*@
+@foreach (var item in Model.MyType)
+{
+    <p>@item.MyId</p>
+    <p>@item.MyValue</p>
+}
+
+@*<p>@Model.MyId</p>
+<p>@Model.MyValue</p>*@

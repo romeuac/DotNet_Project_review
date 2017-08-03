@@ -8,8 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
-
-
+using Microsoft.AspNetCore.Routing;
 
 namespace Romeu_Project
 {
@@ -67,6 +66,12 @@ namespace Romeu_Project
             //associar os arquivos no wwwroot folder
             app.UseStaticFiles();
 
+            //app.UseMvcWithDefaultRoute();
+
+            // Chamada abaixo esta associada com a funcao abaixo, porem funciona apenas se as settings forem Defaul
+            // Ou seja, se estiver utilizando o Home como controller, e nao Main como eh o caso.
+            //app.UseMvc(Configurationroute);
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -74,5 +79,10 @@ namespace Romeu_Project
                     template: "{controller=Main}/{action=Index}/{id?}");
             });
         }
+
+        //private void Configurationroute(IRouteBuilder obj)
+        //{
+        //    obj.MapRoute("Default", "[controller=Home}/{action=Index}/[id?}");
+        //}
     }
 }
