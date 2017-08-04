@@ -2,6 +2,20 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "My Title";
+    // Se nao quisermos utilizar o Layout basico do _ViewStart apenas setar como null
+    //Layout = null;
 }
 
-@ViewBag.value
+@section header{
+    <p> @ViewBag.myobject.MyGuid </p>
+}
+
+<h3> My Value</h3>
+
+@*@await Html.PartialAsync("FirstPartialView")*@
+@*O await e async eh para apenas renderizar de forma assincrona esperando*@
+@await Html.PartialAsync("~/Views/PartialViews/FirstPartialView.cshtml")
+
+@*@ViewBag.value*@
+

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Romeu_Project.Models;
+using Romeu_Project.Services;
 using Romeu_Project.ViewModels;
 using System.Collections.Generic;
 
@@ -12,12 +13,20 @@ namespace Romeu_Project.Controllers
     //[Route("[Controller]")]
     public class MainController : Controller
     {
+        private IMyInjectedService myService;
+
+        public MainController(IMyInjectedService myService)
+        {
+            this.myService = myService;
+        }
+
         //[Route("Main")]
         //[Route("[Action]")]
         // GET: /<controller>/
         public IActionResult Index()
         {
-            ViewBag.value = "My First MVC!!!";
+            //ViewBag.value = "My First MVC!!!";
+            ViewBag.myobject = this.myService;
             return View();
         }
 

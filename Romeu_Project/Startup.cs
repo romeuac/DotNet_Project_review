@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Routing;
+using Romeu_Project.Services;
 
 namespace Romeu_Project
 {
@@ -38,9 +39,20 @@ namespace Romeu_Project
         {
             services.AddApplicationInsightsTelemetry(Configuration);
 
+            // Servico que estamos adicionando do MYInjectedServices
+            // Com Add Singleton  Objeto nao muda quando da o refresh na pagina (eh o mesmo objeto trabalhando 
+            //services.AddSingleton<IMyInjectedService, MyInjectedService>();
+
+            // Com AddScoped um objeto nova eh criado para cada request 
+            //services.AddScoped<IMyInjectedService, MyInjectedService>();
+            // Com o AddTransient, um objeto de servico eh criado sempre que um objeto eh solicitado
+            services.AddTransient<IMyInjectedService, MyInjectedService>();
+
             // Add framework services.
             services.AddMvc();
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
