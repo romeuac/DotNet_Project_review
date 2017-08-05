@@ -63,5 +63,18 @@ namespace Romeu_Project.Controllers
             return Json(mymodel);
         }
 
+        public IActionResult Authenticate()
+        {
+            if (ModelState.IsValid)
+            {
+                // Mandamos para o actio name = Index e com o LoggedIn Controller
+                return RedirectToAction("Index", "LoggedIn");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Main");
+            }
+        }
+
     }
 }
