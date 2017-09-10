@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>MovieRental/_Layout.cshtml at master · romeuac/MovieRental</title>
+  <title>MovieRental/RandomMovieViewModel.cs at master · romeuac/MovieRental</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -36,10 +36,10 @@
     <meta content="https://avatars1.githubusercontent.com/u/17253981?v=4&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="romeuac/MovieRental" property="og:title" /><meta content="https://github.com/romeuac/MovieRental" property="og:url" /><meta content="MovieRental - This project goal is to keep reviewing C# and ASP.NET functionalities." property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA0MjkzODE4Ojg2OGFiYjI4NWNhMWY1OTdjZDNmZmJlNmY4MTNhNzAzYjBmY2EwNTc2Yzc2NjFiMzE4M2IyYjliNWQxOGFlNWM=--fc1962e258e6eda13e425a60d2313e89988f87fa">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA0MjkzODE4OmVlZjlmZTIzYzEwZWM1YmFjZGViZGJmM2RhNWMyNGQyYjg1Y2E3Nzc0NDM1OGFhMDAzMGFhYjFmOWNiMTdhMTU=--5c47e5a6813eb868db2b9b75bfd12e5fdabe8afe">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="DE5D:4704:8C2BB44:FBC1327:59B59BD8" data-pjax-transient>
+  <meta name="request-id" content="DE40:4704:8C2802F:FBBAF06:59B59B86" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -48,7 +48,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="DE5D:4704:8C2BB44:FBC1327:59B59BD8" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="17253981" name="octolytics-actor-id" /><meta content="romeuac" name="octolytics-actor-login" /><meta content="18252cb1bf4b7676ef81058de33cd7fbce2e340f2363e34f44e1ebef2dec1134" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="DE40:4704:8C2802F:FBBAF06:59B59B86" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="17253981" name="octolytics-actor-id" /><meta content="romeuac" name="octolytics-actor-login" /><meta content="18252cb1bf4b7676ef81058de33cd7fbce2e340f2363e34f44e1ebef2dec1134" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -63,7 +63,7 @@
   <meta name="user-login" content="romeuac">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="YWE0ZGJhZTAwOGUyMGYwMGRlNDI0MzE1YTAzYmE5OGQwYzJiMWU0ZDFiNGU0NzNlMGQwMjJjZDkwNDRhYTRjOXx7InJlbW90ZV9hZGRyZXNzIjoiMjAxLjgyLjE0OC42OCIsInJlcXVlc3RfaWQiOiJERTVEOjQ3MDQ6OEMyQkI0NDpGQkMxMzI3OjU5QjU5QkQ4IiwidGltZXN0YW1wIjoxNTA1MDc0MTM5LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+    <meta name="js-proxy-site-detection-payload" content="ZjE5YTU0MDllODBhMDkyOWJhMmY4ZjVmOThmYTBhZmMxZDFhMzMwNmQwYTcwOGY3Zjc1ZGMxZTY2YTI0MjQ1MHx7InJlbW90ZV9hZGRyZXNzIjoiMjAxLjgyLjE0OC42OCIsInJlcXVlc3RfaWQiOiJERTQwOjQ3MDQ6OEMyODAyRjpGQkJBRjA2OjU5QjU5Qjg2IiwidGltZXN0YW1wIjoxNTA1MDc0MDU3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER">
 
@@ -80,7 +80,7 @@
   <meta content="17253981" name="octolytics-dimension-user_id" /><meta content="romeuac" name="octolytics-dimension-user_login" /><meta content="102957786" name="octolytics-dimension-repository_id" /><meta content="romeuac/MovieRental" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="102957786" name="octolytics-dimension-repository_network_root_id" /><meta content="romeuac/MovieRental" name="octolytics-dimension-repository_network_root_nwo" /><meta content="true" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
-    <link rel="canonical" href="https://github.com/romeuac/MovieRental/blob/master/MovieRental/Views/Shared/_Layout.cshtml" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/romeuac/MovieRental/blob/master/MovieRental/ViewModels/RandomMovieViewModel.cs" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -127,7 +127,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/search" class="js-site-search-form" data-scoped-search-url="/romeuac/MovieRental/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/romeuac/MovieRental/blob/master/MovieRental/Views/Shared/_Layout.cshtml" class="header-search-scope no-underline">This repository</a>
+        <a href="/romeuac/MovieRental/blob/master/MovieRental/ViewModels/RandomMovieViewModel.cs" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -250,7 +250,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="no3RhDKr8ufkFTrJASQxhCZzyOQcQoa6HGT1dBOBkU6TJJtDrAmMrRXI794FV66K8Dt7abmes5IexTtQ2QfHFQ==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9WwkjSYbqs+Pz43jziYsQcngmp0F0YGKKHJ9Vf7y4DP4xW5KuLnUhX4SWPTKVbNPH6gpEKANtKIq07NxNHS2aA==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -261,7 +261,7 @@
 </ul>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="2QbtZy0rEuKgDz4hSSo9m4tJtcYFRy96QXR7vzgEoDvUr6egs4lsqFHS6zZNWaKVXQEGS6CbGlJD1bWb8oL2YA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ybtZAf1cPbr648V7LJC2srud6Ym5yX0+lTTyd96e21DEEhPGY/5D8As+EGwo4ym8bdVaBBwVSBaXlTxTFBiNCw==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -296,7 +296,7 @@
 
         <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="fAaZSXBq0OccKIQeIZPF3qX5yxmjQGOOqYxtFKrTt0LjBwFL+CCZE6G6BQFUvd7YOk658wK8Bns2uoYoFujhSQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="102957786" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="lh8ynG8Im9jAOpOpyIXCUSG5LGya5Lo96cIBRBaRMmwJHqqe50LSLH2oEra9q9lXvg5ehjsY38h29Op4qqpkZw==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="102957786" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/romeuac/MovieRental/subscription"
@@ -376,7 +376,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="c0ZCSDSBPPykW0e/GojfSXrzN2Eyd6qC2gPxX3I+7RObWztQe/eGdWFIa8c80ttsZnww04SsNGN69ybeZdAlxg==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="pHX98gtBCCDd1nPI3inOiN/iz+gxuFBkjVrA/uyo4fNMaITqRDeyqRjFX7D4c8qtw23IWodjzoUtrhd/+0YpJg==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -390,7 +390,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4u5OALhjIfLan2j3xP2yYGh5v3Ippuj5xm5Rl3XSnrsus0CumSNqdgYTxVLqVCjO2rH0ITUOCghUlishykqY+A==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FrgmVjOOK7jQPWlWY5Pipf7QdYNZi9WO7WHlnyIZWvja5Sj4Es5gPAyxxPNNOngLTBg+0EUjN39/mZ8pnYFcuw==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -408,7 +408,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jJVPzGcx8KeepEg+mZoiksqhD7DHUBLFCCKOtHC/N0QC32VXjJzLubYkV6qspeh6ZSSTLT0ZUoziOoDl3eiGaQ==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="22WX+rKiVfNCsq2De0U6VO/CZjaaP7Fak84ckZ7gnCtVL71hWQ9u7WoyshdOevC8QEf6q2B28RN51hLAM7ctBg==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -510,9 +510,9 @@
   <div class="repository-content">
 
     
-  <a href="/romeuac/MovieRental/blob/02bff7aa01a82cf78963138c76fbd4553a599690/MovieRental/Views/Shared/_Layout.cshtml" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/romeuac/MovieRental/blob/02bff7aa01a82cf78963138c76fbd4553a599690/MovieRental/ViewModels/RandomMovieViewModel.cs" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:ce34ec46b3f63e791406d7594d3ab3f5 -->
+  <!-- blob contrib key: blob_contributors:v21:5db955154723acbbf90e6383ac724a8d -->
 
   <div class="file-navigation js-zeroclipboard-container">
     
@@ -554,7 +554,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/romeuac/MovieRental/blob/master/MovieRental/Views/Shared/_Layout.cshtml"
+               href="/romeuac/MovieRental/blob/master/MovieRental/ViewModels/RandomMovieViewModel.cs"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -565,7 +565,7 @@
             </a>
         </div>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ii6+ogiWD7Tfz1w+oSx0u17eSANhv9Ho+qI3XoEhYCW5OHX71+CSiCg5tcRo1gU/wUxB6/YOl16gOZ9zXHhdGQ==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="HJ2cJoh8nzUVb+JZDfqXGFbHY5EIgP8Sn1xfzpbik1gvi1d/VwoCCeKZC6PEAOacyVVqeZ8xuaTFx/fjS7uuZA==" /></div>
           <svg aria-hidden="true" class="octicon octicon-git-branch select-menu-item-icon" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
             <div class="select-menu-item-text">
               <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
@@ -573,7 +573,7 @@
             </div>
             <input type="hidden" name="name" id="name" class="js-new-item-value">
             <input type="hidden" name="branch" id="branch" value="master">
-            <input type="hidden" name="path" id="path" value="MovieRental/Views/Shared/_Layout.cshtml">
+            <input type="hidden" name="path" id="path" value="MovieRental/ViewModels/RandomMovieViewModel.cs">
 </form>
       </div>
 
@@ -600,12 +600,12 @@
       <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
     </div>
     <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/romeuac/MovieRental"><span>MovieRental</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/romeuac/MovieRental/tree/master/MovieRental"><span>MovieRental</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/romeuac/MovieRental/tree/master/MovieRental/Views"><span>Views</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/romeuac/MovieRental/tree/master/MovieRental/Views/Shared"><span>Shared</span></a></span><span class="separator">/</span><strong class="final-path">_Layout.cshtml</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/romeuac/MovieRental"><span>MovieRental</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/romeuac/MovieRental/tree/master/MovieRental"><span>MovieRental</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/romeuac/MovieRental/tree/master/MovieRental/ViewModels"><span>ViewModels</span></a></span><span class="separator">/</span><strong class="final-path">RandomMovieViewModel.cs</strong>
     </div>
   </div>
 
 
-  <include-fragment class="commit-tease" src="/romeuac/MovieRental/contributors/master/MovieRental/Views/Shared/_Layout.cshtml">
+  <include-fragment class="commit-tease" src="/romeuac/MovieRental/contributors/master/MovieRental/ViewModels/RandomMovieViewModel.cs">
     <div>
       Fetching contributors&hellip;
     </div>
@@ -621,24 +621,24 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/romeuac/MovieRental/raw/master/MovieRental/Views/Shared/_Layout.cshtml" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/romeuac/MovieRental/blame/master/MovieRental/Views/Shared/_Layout.cshtml" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/romeuac/MovieRental/commits/master/MovieRental/Views/Shared/_Layout.cshtml" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/romeuac/MovieRental/raw/master/MovieRental/ViewModels/RandomMovieViewModel.cs" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/romeuac/MovieRental/blame/master/MovieRental/ViewModels/RandomMovieViewModel.cs" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/romeuac/MovieRental/commits/master/MovieRental/ViewModels/RandomMovieViewModel.cs" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="x-github-client://openRepo/https://github.com/romeuac/MovieRental?branch=master&amp;filepath=MovieRental%2FViews%2FShared%2F_Layout.cshtml"
+           href="x-github-client://openRepo/https://github.com/romeuac/MovieRental?branch=master&amp;filepath=MovieRental%2FViewModels%2FRandomMovieViewModel.cs"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/edit/master/MovieRental/Views/Shared/_Layout.cshtml" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="cB9kudl04IWOe8f0Iwm9Jetz3FXEjjaeoRPUh94AnDutrqcA2rwnwILAUdkJzYaQCN1zpoN12Sz6FoMoavGEgA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/edit/master/MovieRental/ViewModels/RandomMovieViewModel.cs" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/pKHdhWRa36b0UwqZ2zBzQIgqRsykam0w752T9q1J2885o6omJp0Z3cecDiSRJ551kVI+FpRRLRGA3PgP8xOXg==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit this file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/delete/master/MovieRental/Views/Shared/_Layout.cshtml" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="V6GlfOoD3qJGd77SEZBDun8A6/OJdjocPs/7ASX74cPhypR5rOO0iD9JmvaloVAHpGfA2APhngyY/LZ+YeJwDw==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/romeuac/MovieRental/delete/master/MovieRental/ViewModels/RandomMovieViewModel.cs" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="fJyh9upryQa48UGop3NFY0C4modtKKov2bhxGSJtfOof6Z8ofIcmAVHKZ87N7pp3XmSpGF92HIwFtNns+YVCBw==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -646,9 +646,9 @@
 </form>  </div>
 
   <div class="file-info">
-      31 lines (26 sloc)
+      14 lines (13 sloc)
       <span class="file-info-divider"></span>
-    895 Bytes
+    295 Bytes
   </div>
 </div>
 
@@ -658,127 +658,60 @@
       <table class="highlight tab-size js-file-line-container" data-tab-size="8">
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line">@<span class="pl-en">model</span> MovieRental.ViewModels.RandomMovieViewModel</td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">using</span> <span class="pl-en">System</span>;</td>
       </tr>
       <tr>
         <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">using</span> <span class="pl-en">System.Collections.Generic</span>;</td>
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line">&lt;!DOCTYPE html&gt;</td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">using</span> <span class="pl-en">System.Linq</span>;</td>
       </tr>
       <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line">&lt;html&gt;</td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">using</span> <span class="pl-en">System.Web</span>;</td>
       </tr>
       <tr>
         <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line">&lt;head&gt;</td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-k">using</span> <span class="pl-en">MovieRental.Models</span>;</td>
       </tr>
       <tr>
         <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; <span class="pl-en">charset</span>=utf-8&quot;/&gt;</td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line">    &lt;meta charset=&quot;utf-8&quot; /&gt;</td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-k">namespace</span> <span class="pl-en">MovieRental.ViewModels</span></td>
       </tr>
       <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line">{</td>
       </tr>
       <tr>
         <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line">    &lt;title&gt;@ViewBag.Title - Meu Aplicativo ASP.NET&lt;/title&gt;</td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">RandomMovieViewModel</span></td>
       </tr>
       <tr>
         <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line">    @Styles.<span class="pl-en">Render</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>~/Content/css<span class="pl-pds">&quot;</span></span>)</td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line">    {</td>
       </tr>
       <tr>
         <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line">    @Scripts.<span class="pl-en">Render</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>~/bundles/modernizr<span class="pl-pds">&quot;</span></span>)</td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">public </span><span class="pl-en">Movie</span> <span class="pl-en">Movie</span>{ <span class="pl-k">get</span>; <span class="pl-k">set</span>; }</td>
       </tr>
       <tr>
         <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line">&lt;/head&gt;</td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">public </span><span class="pl-en">List</span>&lt;<span class="pl-en">Customer</span>&gt; <span class="pl-en">Customers</span> { <span class="pl-k">get</span>; <span class="pl-k">set</span>; }</td>
       </tr>
       <tr>
         <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line">&lt;body&gt;</td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">    }</td>
       </tr>
       <tr>
         <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line">    @*Da para colocar um model tb associado a essa Partial View, usado o do Random Movie como Ex *@</td>
-      </tr>
-      <tr>
-        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line">    @Html.<span class="pl-en">Partial</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>_NavBar<span class="pl-pds">&quot;</span></span>);</td>
-      </tr>
-      <tr>
-        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-en">div</span> class=&quot;container body-content&quot;&gt;</td>
-      </tr>
-      <tr>
-        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line">        @<span class="pl-en">RenderBody</span>()</td>
-      </tr>
-      <tr>
-        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line">        &lt;hr /&gt;</td>
-      </tr>
-      <tr>
-        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line">        &lt;footer&gt;</td>
-      </tr>
-      <tr>
-        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line">            &lt;p&gt;&amp;copy; @<span class="pl-en">DateTime.Now.Year</span> - Movie Rental - Created by RomeuAC&lt;/p&gt;</td>
-      </tr>
-      <tr>
-        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line">        &lt;/footer&gt;</td>
-      </tr>
-      <tr>
-        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line">    &lt;/div&gt;</td>
-      </tr>
-      <tr>
-        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line">
-</td>
-      </tr>
-      <tr>
-        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line">    @Scripts.<span class="pl-en">Render</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>~/bundles/jquery<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line">    @Scripts.<span class="pl-en">Render</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>~/bundles/bootstrap<span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line">    @<span class="pl-en">RenderSection</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>scripts<span class="pl-pds">&quot;</span></span>, required: <span class="pl-c1">false</span>)</td>
-      </tr>
-      <tr>
-        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line">&lt;/body&gt;</td>
-      </tr>
-      <tr>
-        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line">&lt;/html&gt;</td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line">}</td>
       </tr>
 </table>
 
@@ -796,7 +729,7 @@
       <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
         <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
         <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
-        <li><a href="/romeuac/MovieRental/blame/02bff7aa01a82cf78963138c76fbd4553a599690/MovieRental/Views/Shared/_Layout.cshtml" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
+        <li><a href="/romeuac/MovieRental/blame/02bff7aa01a82cf78963138c76fbd4553a599690/MovieRental/ViewModels/RandomMovieViewModel.cs" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
           <li><a href="/romeuac/MovieRental/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
       </ul>
     </div>
@@ -826,7 +759,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2017 <span title="0.15002s from unicorn-3036445452-w8bqv">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2017 <span title="0.16833s from unicorn-1951499593-7kzv3">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
