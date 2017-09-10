@@ -1,0 +1,14 @@
+﻿
+@*@model MovieRental.Models.Customer*@
+@model LocaFilme.ViewModels.RandomMovieViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var nameDisplayed = Model.Customers[0].Id == 1 ? "John Smith" : "Mary Williams";
+}
+
+<h2>@nameDisplayed</h2>
