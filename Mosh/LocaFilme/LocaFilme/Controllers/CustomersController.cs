@@ -23,7 +23,6 @@ namespace LocaFilme.Controllers
             _context.Dispose();
         }
 
-        // GET: Customers
         [Route("Customers/Index")]
         public ActionResult Index()
         {
@@ -31,32 +30,11 @@ namespace LocaFilme.Controllers
             return View(customers);
         }
 
-        //[Route("Customers/Details/{givenId:regex(\\d{1}):range(1,2)}")]
-        //public ActionResult Details(int givenId)
-        //{
-        //    //var model = new Customer() { Id = givenId, Name = "none"};
 
-        //    var movie = new Movie() { Name = "Sherek!" };
-
-        //    var customers = new List<Customer>
-        //    {
-        //        new Customer {Name = "Customer 1", Id = givenId},
-        //        new Customer {Name = "Customer 2", Id = givenId}
-        //    };
-
-        //    var viewModel = new RandomMovieViewModel()
-        //    {
-        //        Movie = movie,
-        //        Customers = customers
-        //    };
-
-        //    return View(viewModel);
-        //}
-        [Route("Customers/Details/{id:regex(\\d{1}):range(1,2)}")]
+        [Route("Customers/Details/{id:regex(\\d{1}):range(1,9)}")]
         public ActionResult Details(int id)
         {
-            
-            var customer = _context.Customer.SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customer.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
                     return HttpNotFound();

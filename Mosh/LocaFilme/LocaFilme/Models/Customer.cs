@@ -17,5 +17,6 @@ namespace LocaFilme.Models
         public MembershipType MembershipType { get; set; }
         // Entity framework entende essa convencao e coloca a prop abaixo como a Chave
         public byte MembershipTypeId { get; set; }
+        public DateTime? Birthdate { get; set; }
     }
 }

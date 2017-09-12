@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,6 +11,18 @@ namespace LocaFilme.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
         // GET: Movies/Random
         public ActionResult Random()
         {
@@ -29,11 +42,6 @@ namespace LocaFilme.Controllers
 
             return View(viewModel);
 
-            // Passando data para a View por Dicionario - NAO RECOMENDADO
-            //ViewData["Movie"] = movie;
-            //return View();
-
-            //return View(movie);
         }
 
         // Da maneira abaixo tem-se de passar 2 digitols para o month e de 1 a 12
@@ -46,7 +54,20 @@ namespace LocaFilme.Controllers
         [Route("Movies/Index")]
         public ActionResult Index()
         {
-            return View();
+            var movies = _context.Movie.Include(m => m.Genre).ToList();
+            return View(movies);
+        }
+
+        [Route("Movies/Details/{id:range(01,10)}")]
+        public ActionResult Details(int id)
+        {
+            var movie = _context.Movie.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            return View(movie);
+
         }
     }
 }

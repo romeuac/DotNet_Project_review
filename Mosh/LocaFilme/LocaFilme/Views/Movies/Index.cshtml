@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<LocaFilme.Models.Movie>
+
 @{
     ViewBag.Title = "Movies";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,8 +14,12 @@
     </thead>
 
     <tbody>
-        <tr><th>Shrek!</th></tr>
-        <tr><th>Wall-e</th></tr>
+        @foreach (var movie in @Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
+            </tr>
+        }
     </tbody>
 
 </table>
